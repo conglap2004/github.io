@@ -3,108 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Cá Nhân | Portfolio</title>
+  <title>Blog Cá Nhân | Sở Thích & Cuộc Sống</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#f4f6f8;color:#333;line-height:1.6}
-    header{background:linear-gradient(135deg,#4f46e5,#06b6d4);color:#fff;padding:80px 20px;text-align:center}
-    header h1{font-size:42px}
-    header p{max-width:600px;margin:15px auto}
-    nav{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+    body{background:#f3f4f6;color:#1f2937}
+    header{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:90px 20px;text-align:center}
+    header h1{font-size:44px;margin-bottom:10px}
+    header p{max-width:650px;margin:auto;font-size:16px}
+    nav{background:#fff;position:sticky;top:0;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:10}
     nav ul{display:flex;justify-content:center;list-style:none}
-    nav li{margin:0 20px}
-    nav a{text-decoration:none;color:#333;font-weight:500;padding:15px;display:block}
-    nav a:hover{color:#4f46e5}
-    section{padding:70px 10%}
-    .title{text-align:center;margin-bottom:40px}
-    .title h2{font-size:32px;color:#4f46e5}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-    .about img{width:100%;border-radius:16px}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-    .card{background:#fff;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08);overflow:hidden;transition:.3s}
-    .card:hover{transform:translateY(-6px)}
-    .card img{width:100%;height:180px;object-fit:cover}
-    .card-body{padding:20px}
-    .card-body h3{margin-bottom:10px}
-    .card-body p{font-size:14px;margin-bottom:15px}
-    .btn{display:inline-block;background:#4f46e5;color:#fff;padding:10px 18px;border-radius:30px;text-decoration:none;font-size:14px}
-    .blog-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
-    footer{background:#111827;color:#9ca3af;text-align:center;padding:40px 20px}
-    @media(max-width:768px){.about{grid-template-columns:1fr}}
+    nav li{margin:0 18px}
+    nav a{text-decoration:none;color:#111827;font-weight:500;padding:16px;display:block}
+    nav a:hover{color:#2563eb}
+    section{padding:80px 10%}
+    .title{text-align:center;margin-bottom:45px}
+    .title h2{font-size:34px;color:#2563eb}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+    .card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.1);transition:.3s}
+    .card:hover{transform:translateY(-8px)}
+    .card img{width:100%;height:200px;object-fit:cover}
+    .card-body{padding:22px}
+    .card-body h3{margin-bottom:12px}
+    .card-body p{font-size:14px;line-height:1.6}
+    footer{background:#020617;color:#9ca3af;text-align:center;padding:45px 20px}
+    @media(max-width:768px){section{padding:60px 6%}}
   </style>
 </head>
 <body>
   <header>
-    <h1>Xin chào, tôi là Lập Trình Viên Web</h1>
-    <p>Nơi chia sẻ blog cá nhân, đồ án học tập và các dự án web thực tế.</p>
+    <h1>Blog Cá Nhân</h1>
+    <p>Chia sẻ sở thích, đam mê và những khoảnh khắc trong cuộc sống của tôi.</p>
   </header>
 
   <nav>
     <ul>
       <li><a href="#about">Giới thiệu</a></li>
-      <li><a href="#projects">Đồ án</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="#game">Game</a></li>
+      <li><a href="#football">Đá bóng</a></li>
+      <li><a href="#car">Xe hơi</a></li>
       <li><a href="#contact">Liên hệ</a></li>
     </ul>
   </nav>
 
   <section id="about">
-    <div class="title"><h2>Giới thiệu bản thân</h2></div>
-    <div class="about">
-      <div>
-        <p>Tôi là sinh viên Công nghệ Thông tin, đam mê lập trình web và xây dựng sản phẩm số. Blog này dùng để lưu trữ kiến thức, chia sẻ kinh nghiệm học tập và giới thiệu các đồ án nổi bật.</p>
-        <p><b>Kỹ năng:</b> HTML, CSS, JavaScript, MySQL, Git, React cơ bản.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="profile">
+    <div class="title"><h2>Giới thiệu</h2></div>
+    <div style="max-width:900px;margin:auto;text-align:center;line-height:1.8">
+      <p>Tôi là một người trẻ yêu thích công nghệ, đam mê sáng tạo và luôn muốn khám phá những điều mới mẻ trong cuộc sống. Blog cá nhân này được tạo ra như một không gian riêng để tôi chia sẻ về sở thích, suy nghĩ và những trải nghiệm hằng ngày.</p>
+      <p>Ngoài việc học tập và làm việc, tôi dành nhiều thời gian cho các hoạt động giải trí như chơi game, đá bóng cùng bạn bè và tìm hiểu về những mẫu xe hơi đẹp, hiện đại. Những sở thích này giúp tôi cân bằng cuộc sống và tạo thêm động lực mỗi ngày.</p>
+      <p>Mục tiêu của blog không chỉ là ghi lại kỷ niệm cá nhân mà còn mong muốn truyền cảm hứng tích cực đến những người có cùng đam mê.</p>
     </div>
   </section>
 
-  <section id="projects">
-    <div class="title"><h2>Đồ án & Dự án nổi bật</h2></div>
-    <div class="projects">
+  <section id="game">
+    <div class="title"><h2>🎮 Đam mê Game</h2></div>
+    <div class="grid">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575">
         <div class="card-body">
-          <h3>Website Quản Lý Bán Hàng</h3>
-          <p>Hệ thống quản lý sản phẩm, hóa đơn, đăng nhập người dùng.</p>
-          <a class="btn" href="#">Xem chi tiết</a>
+          <h3>Game Chiến Thuật</h3>
+          <p>Tôi yêu thích những tựa game chiến thuật vì chúng rèn luyện khả năng tư duy logic, lập kế hoạch và ra quyết định nhanh. Mỗi ván chơi đều mang lại thử thách mới.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+        <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf">
         <div class="card-body">
-          <h3>Blog Cá Nhân</h3>
-          <p>Thiết kế blog responsive bằng HTML, CSS, JavaScript.</p>
-          <a class="btn" href="#">Xem chi tiết</a>
+          <h3>Game Esports</h3>
+          <p>Liên Minh Huyền Thoại, Valorant hay CS:GO là những tựa game tôi thường chơi và theo dõi giải đấu. Esports giúp tôi học được tinh thần đồng đội và kỷ luật.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f">
         <div class="card-body">
-          <h3>Website Coffee Manager</h3>
-          <p>Quản lý menu, doanh thu, thống kê bán hàng.</p>
-          <a class="btn" href="#">Xem chi tiết</a>
+          <h3>Giải trí & Thư giãn</h3>
+          <p>Game không chỉ để cạnh tranh mà còn là cách giúp tôi thư giãn sau những giờ học tập, làm việc căng thẳng.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="blog">
-    <div class="title"><h2>Bài viết Blog</h2></div>
-    <div class="blog-list">
+  <section id="football">
+    <div class="title"><h2>⚽ Đá bóng</h2></div>
+    <div class="grid">
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
         <div class="card-body">
-          <h3>Cách học HTML & CSS hiệu quả</h3>
-          <p>Kinh nghiệm tự học web cho người mới bắt đầu.</p>
-          <a class="btn" href="#">Đọc thêm</a>
+          <h3>Bóng đá phong trào</h3>
+          <p>Tôi thường xuyên tham gia đá bóng cùng bạn bè vào cuối tuần. Đây là cách tốt nhất để rèn luyện sức khỏe và gắn kết tinh thần đồng đội.</p>
         </div>
       </div>
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a">
         <div class="card-body">
-          <h3>Đồ án sinh viên cần chuẩn bị gì?</h3>
-          <p>Hướng dẫn làm đồ án đẹp, dễ đạt điểm cao.</p>
-          <a class="btn" href="#">Đọc thêm</a>
+          <h3>Theo dõi giải đấu</h3>
+          <p>Ngoại hạng Anh, Champions League và World Cup là những giải đấu tôi luôn theo dõi. Mỗi trận đấu đều mang lại cảm xúc đặc biệt.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2">
+        <div class="card-body">
+          <h3>Bài học từ bóng đá</h3>
+          <p>Bóng đá dạy tôi tinh thần kiên trì, không bỏ cuộc và tôn trọng đồng đội – những điều áp dụng rất tốt trong cuộc sống.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="car">
+    <div class="title"><h2>🚗 Xe hơi đẹp</h2></div>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+        <div class="card-body">
+          <h3>Siêu xe</h3>
+          <p>Những mẫu siêu xe như Lamborghini, Ferrari hay McLaren luôn gây ấn tượng mạnh với thiết kế táo bạo và sức mạnh vượt trội.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+        <div class="card-body">
+          <h3>Xe thể thao</h3>
+          <p>Xe thể thao mang lại trải nghiệm lái thú vị, cân bằng giữa hiệu năng, thẩm mỹ và khả năng sử dụng hằng ngày.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+        <div class="card-body">
+          <h3>Công nghệ ô tô</h3>
+          <p>Tôi đặc biệt quan tâm đến công nghệ mới trên ô tô như xe điện, tự lái và các hệ thống hỗ trợ an toàn thông minh.</p>
         </div>
       </div>
     </div>
@@ -112,11 +138,11 @@
 
   <section id="contact">
     <div class="title"><h2>Liên hệ</h2></div>
-    <p style="text-align:center">Email: example@gmail.com | Facebook | GitHub</p>
+    <p style="text-align:center">📧 Email: yourmail@gmail.com | 🌐 Facebook | 💻 GitHub</p>
   </section>
 
   <footer>
-    <p>© 2026 Blog Cá Nhân | Designed by You</p>
+    <p>© 2026 Blog Cá Nhân | Thiết kế HTML & CSS</p>
   </footer>
 </body>
 </html>
