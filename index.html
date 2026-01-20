@@ -2,68 +2,80 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Blog cá nhân - Trịnh Công Lập</title>
+  <title>Blog Công Nghệ - Trịnh Công Lập</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       background: #f4f6f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      background: linear-gradient(135deg, #2196F3, #0D47A1);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
+      animation: fadeIn 2s ease-in-out;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
     }
     header p {
-      margin: 5px 0;
-      font-size: 1.2em;
+      margin: 10px 0;
+      font-size: 1.3em;
     }
     nav {
-      background: #333;
-      padding: 10px;
+      background: #0D47A1;
+      padding: 12px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      transition: color 0.3s;
     }
     nav a:hover {
-      color: #4CAF50;
+      color: #FFEB3B;
     }
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 30px auto;
       background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease;
     }
     section h2 {
-      border-left: 5px solid #4CAF50;
-      padding-left: 10px;
-      color: #2E7D32;
+      border-left: 6px solid #2196F3;
+      padding-left: 12px;
+      color: #0D47A1;
     }
     ul {
       list-style: none;
       padding: 0;
     }
     ul li {
-      padding: 5px 0;
+      padding: 8px 0;
+      transition: transform 0.3s;
+    }
+    ul li:hover {
+      transform: translateX(5px);
+      color: #2196F3;
     }
     footer {
-      background: #2E7D32;
+      background: #0D47A1;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 20px;
+      margin-top: 40px;
     }
     .contact-info {
       display: flex;
@@ -73,25 +85,55 @@
       margin-top: 15px;
     }
     .contact-info div {
-      background: #e8f5e9;
-      padding: 10px 15px;
-      border-radius: 6px;
+      background: #E3F2FD;
+      padding: 12px 18px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .contact-info div:hover {
+      background: #BBDEFB;
+    }
+    .project-card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: box-shadow 0.3s;
+    }
+    .project-card:hover {
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Trịnh Công Lập</h1>
-    <p>Lập Trình Viên Web | IT Support | Tester | Quản trị mạng</p>
+    <p>Lập Trình Viên Web | Blog Công Nghệ</p>
   </header>
 
   <nav>
+    <a href="#gioithieu">Giới thiệu</a>
     <a href="#hocvan">Học vấn</a>
     <a href="#kinhnghiem">Kinh nghiệm</a>
-    <a href="#kynang">Kỹ năng</a>
-    <a href="#sothich">Sở thích</a>
+    <a href="#duan">Dự án</a>
+    <a href="#blog">Blog Công nghệ</a>
     <a href="#lienhe">Liên hệ</a>
   </nav>
+
+  <section id="gioithieu">
+    <h2>👨‍💻 Giới thiệu</h2>
+    <p>Xin chào, mình là <strong>Trịnh Công Lập</strong>, sinh viên ngành Công nghệ Thông tin. 
+    Mình yêu thích lập trình, nghiên cứu công nghệ mới và mong muốn trở thành một nhân sự CNTT chuyên nghiệp. 
+    Đây là blog cá nhân nơi mình chia sẻ kiến thức, dự án và góc nhìn về công nghệ.</p>
+  </section>
 
   <section id="hocvan">
     <h2>🎓 Học vấn</h2>
@@ -113,22 +155,25 @@
     </ul>
   </section>
 
-  <section id="kynang">
-    <h2>🛠️ Kiến thức & Kỹ năng</h2>
-    <p><strong>Ngôn ngữ lập trình:</strong> C, C++, Java, Python, JavaScript</p>
-    <p><strong>Web:</strong> HTML, CSS, JavaScript, Bootstrap, React (cơ bản)</p>
-    <p><strong>CSDL:</strong> MySQL, SQL Server</p>
-    <p><strong>Hệ điều hành & Mạng:</strong> Windows, Linux cơ bản, cấu hình IP/DHCP/DNS</p>
-    <p><strong>Công cụ:</strong> Git, GitHub, VS Code, IntelliJ, NetBeans, XAMPP</p>
-    <p><strong>Kỹ năng mềm:</strong> Làm việc nhóm, tư duy logic, tự học, giao tiếp cơ bản</p>
+  <section id="duan">
+    <h2>🚀 Dự án nổi bật</h2>
+    <div class="project-card">
+      <h3>Website Coffee Manager</h3>
+      <p>Ứng dụng quản lý bán hàng cho quán cà phê, hỗ trợ đăng nhập, thêm/sửa/xóa sản phẩm, thống kê doanh thu.</p>
+    </div>
+    <div class="project-card">
+      <h3>Blog Công nghệ cá nhân</h3>
+      <p>Xây dựng blog cá nhân bằng HTML/CSS/JS để chia sẻ kiến thức công nghệ, kinh nghiệm học tập và dự án thực tế.</p>
+    </div>
   </section>
 
-  <section id="sothich">
-    <h2>⚽ Sở thích</h2>
+  <section id="blog">
+    <h2>📰 Blog Công nghệ</h2>
     <ul>
-      <li>Bóng đá</li>
-      <li>Thể thao</li>
-      <li>Chơi game</li>
+      <li><strong>AI và Machine Learning:</strong> Khám phá cách trí tuệ nhân tạo thay đổi thế giới.</li>
+      <li><strong>Web Development:</strong> Xu hướng mới trong React, Node.js và hệ sinh thái JavaScript.</li>
+      <li><strong>Cybersecurity:</strong> Tầm quan trọng của bảo mật thông tin trong thời đại số.</li>
+      <li><strong>Cloud Computing:</strong> Điện toán đám mây và ứng dụng trong doanh nghiệp hiện đại.</li>
     </ul>
   </section>
 
@@ -143,7 +188,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Blog cá nhân của Trịnh Công Lập</p>
+    <p>© 2026 Blog Công Nghệ của Trịnh Công Lập</p>
   </footer>
 </body>
 </html>
